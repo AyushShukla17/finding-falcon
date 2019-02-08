@@ -1,0 +1,45 @@
+.container {
+    position:relative;
+    font-size: 0px;
+    margin-bottom:20px;
+}
+.card-container {
+    display:inline-block;
+    width:25%;
+    vertical-align: top;
+}
+.dropdown-container {
+    display:inline-block;
+    width:70%;
+    vertical-align: top;
+}
+.total-time-container {
+    font-size:24px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+.submit-button {
+    outline:none;
+    display: block;
+    cursor: pointer;
+    max-width: 208px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 24px;
+    text-align: center;
+    border-radius: 2px;
+    letter-spacing: .3px;
+    margin: 0 auto;
+    border: 1px solid #509cde;
+    text-transform: capitalize;
+    color:#ffffff;
+    background-color: #509cde;
+}
+.dropdown-header {
+    font-size: 20px;
+}
+.radio-container {
+    font-size: 16px;
+    padding: 10px 10px 10px 0;
+}
