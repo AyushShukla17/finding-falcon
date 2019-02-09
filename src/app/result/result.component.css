@@ -1,0 +1,21 @@
+.result-container {
+  text-align: center;
+}
+.submit-button {
+  outline:none;
+  display: block;
+  cursor: pointer;
+  max-width: 208px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 2px;
+  letter-spacing: .3px;
+  margin: 30px auto;
+  border: 1px solid #509cde;
+  text-transform: capitalize;
+  color:#ffffff;
+  background-color: #509cde;
+  box-shadow: 4px 4px 4px 4px #D3D3D3;
+}

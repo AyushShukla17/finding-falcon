@@ -5,7 +5,7 @@
 }
 .card-container {
     display:inline-block;
-    width:25%;
+    width:20%;
     vertical-align: top;
 }
 .dropdown-container {
@@ -30,11 +30,12 @@
     text-align: center;
     border-radius: 2px;
     letter-spacing: .3px;
-    margin: 0 auto;
+    margin: 30px auto;
     border: 1px solid #509cde;
     text-transform: capitalize;
     color:#ffffff;
     background-color: #509cde;
+    box-shadow: 4px 4px 4px 4px #D3D3D3;
 }
 .dropdown-header {
     font-size: 20px;
@@ -42,4 +43,15 @@
 .radio-container {
     font-size: 16px;
     padding: 10px 10px 10px 0;
+}
+.container {
+    width:60%;
+    margin: 60px auto;
+}
+.timer-container {
+    display: inline-block;
+    vertical-align: top;
+    width:20%;
+    font-size: 20px;
+    margin-top:4px;
 }

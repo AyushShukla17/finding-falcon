@@ -11,13 +11,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DropdownModule} from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import {RadioButtonModule} from 'primeng/radiobutton';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SelectgadgetsComponent,
-    ResultComponent
+    ResultComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

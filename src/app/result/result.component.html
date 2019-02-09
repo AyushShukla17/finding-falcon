@@ -1,3 +1,13 @@
-<p>
-  result works!
-</p>
+<app-navbar></app-navbar>
+<div *ngIf="result && result.status" class="result-container">
+  <h3 *ngIf="result.status === 'success'">
+    Success!! Congratulations on Finding Falcone. King Shan is mighty pleased.
+    <h4>Time Taken: {{ timeTaken }}</h4>
+    <h3>Planet Found: {{ result.planet_name }}</h3>
+  </h3>
+  <h3 *ngIf="result.status === 'false'">
+    Failure!! Unfortunately Falcone could not be found. King Shan is not pleased.
+    <h4>Time Taken:  {{ timeTaken }}</h4>
+  </h3>
+</div>
+<button class="submit-button" (click)="startAgain()">Start Again</button>

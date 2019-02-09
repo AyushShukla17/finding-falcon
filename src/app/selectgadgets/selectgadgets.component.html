@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
   <p class="dropdown-header">Select Planets you want to search in:</p>
   <div class="card-container" *ngFor="let i of [0,1,2,3];let i = index">
@@ -10,10 +11,11 @@
     ></p-dropdown>
     <div *ngIf="selectedPlanet[i]">
     <div class="radio-container" *ngFor="let p of vehiclesToShow;let p = index;">
-        <input type="radio" [name]="i" [value]="p.name" [disabled]="p.total_no === 0 || selectedPlanet[i].distance > p.max_distance" (click)="vehicleSelected(p.name,i)">{{p.name}}({{p.total_no}})<br>
+        <input type="radio" [name]="i" [value]="p.name" [disabled]="p.total_no === 0 || selectedPlanetDistance[i] > p.max_distance" (click)="vehicleSelected(p.name,i)">{{p.name}}({{p.total_no}})<br>
     </div>
   </div>
   </div> 
+  <div class="timer-container">Time Taken:{{totalTime}}</div>
   <div>
 </div>
-<button class="submit-button" (click)="findFalcon()" [disabled]="selectedPlanet.length < 5 && selectedVehicles.length < 5">Find Falcon</button>
+<button class="submit-button" (click)="findFalcon()" [disabled]="selectedPlanet.length < 4 && selectedVehicles.length < 4">Find Falcon</button>
