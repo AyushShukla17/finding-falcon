@@ -18,4 +18,4 @@
   <div class="timer-container">Time Taken:{{totalTime}}</div>
   <div>
 </div>
-<button class="submit-button" (click)="findFalcon()" [disabled]="selectedPlanet.length < 4 && selectedVehicles.length < 4">Find Falcon</button>
+<button class="submit-button" (click)="findFalcon()" [disabled]="selectedPlanet.length < 4 || selectedVehicles.length < 4">Find Falcon</button>
